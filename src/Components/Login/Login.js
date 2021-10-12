@@ -19,27 +19,38 @@ export default function Login() {
     )
 }
 
-const Container =styled.div``;
+const Container =styled.div`
+padding:0;
+background-color:#FFFFFF;
+
+
+`;
 
 const Nav =styled.div`
-    padding: 20px;
+    padding: 10px 10%;
+   
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin: 0 15px;
+    flex-wrap: nowrap;
+    font-weight:600;
+    @media (max-width:480px){
+        padding: 15px 0;
+        font-weight: 300;
+}
 
-    & div{
-        display: flex;
-        width: 15%;
-    justify-content: space-between;
-      align-items:center
-    }
 
 `;
 const Logo=styled.nav `
-width: 10%;
+width:130px;
+@media (max-width:480px){
+    width: 70px;
+}
 
 & > img{
     width: 100%;
+
 }
 `;
 
@@ -53,6 +64,7 @@ const Join=styled.span`
 
 & a {
     text-decoration: none;
+    color:#9e9e9e;
 }
     &:hover{
         background-color: #EBEBEB;
@@ -60,18 +72,24 @@ const Join=styled.span`
     }
     `;
 
-const SignIn=styled.span`
-     padding: 15px 10px;
+const SignIn=styled.span `
+    padding: 10px 20px;
     cursor: pointer;
-    background-color: rgba(112,181,249,0.15);
+    border:1px #0073b1 solid;
     border-radius: 34px;
     width: 50%;
     text-align: center;
-    & :hover{
-        background-color: rgba(112,181,249,0.15);
-    color: #0a66c2;
-    };
-    & a {
+
+    &:hover{
+    background-color: rgba(112,181,249,0.15);
+    color: red;
+    box-shadow:0 0 0 2px #0a66c2;
+    }
+& >a{
     text-decoration: none;
-};
+    color:#0073b1;
+}
+@media (max-width:480px){
+    padding: 5px 10px;
+}
 `;

@@ -3,9 +3,11 @@
     padding: 0;
 box-sizing: border-box;
 vertical-align: baseline;
+background-color: #f4f4f4
 }
 
 body{
     overflow-y: scroll;
     overflow-x: hidden;
+    font-family: Arial, sans-serif;
 }
