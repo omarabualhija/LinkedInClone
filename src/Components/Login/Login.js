@@ -1,7 +1,10 @@
 import React from 'react'
 import {Link} from "react-router-dom"
-import styled from 'styled-components'
 import {Container,Nave,Logo,Rigttbtn,Join,Signin,Hero,LeftSide,Links} from './Style'
+
+
+
+
 export default function Login() {
     return (
 
@@ -11,7 +14,7 @@ export default function Login() {
             <Link to="/"><img src="Img/loginlogo.svg" alt="Logo LinkedIn"></img></Link>
         </Logo>
         <Rigttbtn>
-        <Join><Link to="/SignUp">Join Now</Link></Join>
+        <Join Link><Link to="/SignUp">Join Now</Link></Join>
         <Signin><Link to="/SignIn">Sign in</Link></Signin>
         </Rigttbtn>
         </Nave>

@@ -1,7 +1,7 @@
 
 import styled from "styled-components"
 
-export const Container=styled.div`
+export const Container=styled.div`//Full Bage
     max-width: 79%;
     width: 79%;
     margin: auto;
@@ -23,7 +23,7 @@ export const Container=styled.div`
  
 `
 
-export const Nave=styled.div`
+export const Nave=styled.div`//NavBar 
   
     margin: auto;
     display: flex;
@@ -32,11 +32,11 @@ export const Nave=styled.div`
     align-items: center;
 `
 
-export const Logo=styled.div`
+export const Logo=styled.div`//Logo
     width: 133px;
 
     @media(max-width:760px){
-        width:15%
+        width:25%
     }
 `
 
@@ -98,6 +98,8 @@ export const Signin=styled.div`
     @media(max-width:760px){
              font-size:0.80rem;
         padding: 7px 10px;
+        display: flex;
+    align-items: center;
     }
 
     @media (max-width:460px){
