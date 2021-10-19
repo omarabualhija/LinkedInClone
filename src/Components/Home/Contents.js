@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function Content() {
+const Contents = () => {
     return (
         <div>
-           content 
+            Contents
         </div>
     )
 }
+export default Contents;

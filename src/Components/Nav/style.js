@@ -1,152 +1,137 @@
 import styled from "styled-components"
-import { NavLink } from 'react-router-dom'
 
-export const Contener={
-    width:"94%",
-    margin:"auto",
-    };
-    
-   export const circlelImg={
-        borderRadius: "60px",
-        backgroundColor: "transparent",
-        width: "40px",
-       height:"40px",
-        display: "flex",
-        justifyContent:"center",
-        alignItems: "center",
-        border: "1px solid #f1f1f1",
-    };
-    
-   export  const TopNav=styled.nav`
-    position: fixed;
-    background-color:white;
-    width: 100%;
-    padding:5px 0;
-    border-bottom: 1px solid #c1c1c1;
-    & div{
-       
-        margin: auto;
-        display: flex;
-        justify-content: center;
-    
-     
-    
-        & div:nth-child(2){
-        width: 70%;
-        position: relative;
-        flex-shrink: 1.5;
-        background-color: #eef3f8;
-        border-radius:4px;
-    
-        & div {
-            justify-content: end;
-            width: 100%;
-           
-    
-            & i{
-     position: absolute;
-        top: 7px;
-        left:4px;
-        }
-    [type="input"] {
-        width: 88%;
-        height: 30px;
-        outline: none;
-        border: none;
-        background-color: #eef3f8;
-    
-        border-radius:4px;
-        font-size: 16px;
-       
-        color: #c1c1c1;
-    
-    }
-    
-    }
-        }
-    
-    }
-    
-    `
-    
-    
-   export  const BottomNav=styled.div`
-    width:100%;
-    position:fixed;
-    bottom:0;
-    background-color:white;
-    border-top: 1px solid #c1c1c1;
-    z-index: -1;
-    
-    
-    & div{
-        width: 94%;
-        margin: auto;
-        padding: 22px 0px !important;
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    `
-    
-   export  const LinkElem = styled(NavLink)`
-      text-decoration:none;
-          color:rgba(0,0,0,0.45);
-    &.active {
-      color: black;
-    }
-    `;
+export const circlelImg={
+    borderRadius: "60px",
+    backgroundColor: "transparent",
+    width: "40px",
+    height:"40px",
+    padding: "0 6px",
+    display: "flex",
+    justifyContent:"center",
+    alignItems: "center",
+    border: "1px solid #f1f1f1",
+};
 
-
-export const Search=styled.div`
-width:100%;
-height:100vh;
+export const Nav=styled.div`
 background-color:white;
-
-
-
-> div{
-   display:flex;
-   flex-direction:column;
-   
-        & div:first-child {    
-       display:flex;
-       height: 50px;
-    align-items: center;
-    border-bottom: 1px solid #e7e7e7;
-    & >i{
-        margin: 0px 20px;
-    };
-    & >input{
-    width: 65%;
-    height: 30px;
-    border: none;
-    font-size:16px;
-    margin-left: 15px;
-    color:#c1c1c1;
-    :focus{
-   outline:none;
-   color:black;
-   font-size:16px
-    };
-    };
-
-        }
-
-    div:last-child {
-    margin-top: 15px;
-    display: flex;
-    align-items: baseline;
-    width:70%auto;
-    overflow:hidden;
-
-      & div:first-child {
-    margin-right: 20px;
-    margin-left: 10px;
-    }
-
-    }
+width:100%;
 }
 
+& > div:first-child{
+    display: flex;
+    align-items:center;
+    width: 100%;
+    max-width: 1280px;
+    padding:2px 15px;
+    margin:  auto;
+
+@media (min-width:768px){
+    padding:0px 6px;
+    padding: 0px 81px;
+    /* width: 1128px; */
+    width: 100%;
+
+}
 
 `
+export const TopNav=styled.nav`
+
+    display:flex;
+    align-items:center;
+    width:100%;
+    margin: 7px 0;
+
+@media (min-width:768px){
+    width: 41%;
+    margin-right: 20px;
+    margin:0;
+}
+
+& > :first-child{
+    margin-right:6px
+    
+}
+
+& >:nth-child(2){ 
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color:#EEF3F8;
+    border-radius:4px;
+    width: 85%;
+    
+    @media (min-width:768px){
+        width:62%;
+    }
+& > i{
+    position: absolute;
+    left: 16px;
+    font-size: 14px;
+}
+
+& [type="input"]{
+    height: 34px;
+    border-radius:4px;
+    outline:none;
+    border:none;
+    background-color:transparent;
+    font-size:16px;
+    width: 90%;
+    padding: 0 5px 0 40px;
+    width:100%;
+ 
+}
+
+& [type="input"]::placeholder{
+
+    font-size:14px;
+    font-weight:100;
+    align-items:center;
+}
+}
+
+`
+
+export const BottomNav=styled.nav`
+width: 100%;
+position: absolute;
+bottom: 0;
+left:0;
+background-color:white;
+
+@media (min-width:768px){
+    position: relative;
+    width: 55%;
+    
+}
+
+& > :first-child {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px;
+    text-align: center;
+    
+ 
+@media (min-width:768px){
+    justify-content:start;
+}
+
+    & a{
+        text-decoration: none;
+        color:#b1b1b3;
+        font-size:13px;
+
+        @media (min-width:768px){
+           
+    padding: 1px 24px;
+    font-size:16px;
+        } 
+       
+    }
+    & .active{
+        color:black;
+    }
+
+}
+`
+

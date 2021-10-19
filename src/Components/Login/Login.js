@@ -15,7 +15,7 @@ export default function Login() {
         </Logo>
         <Rigttbtn>
         <Join Link><Link to="/SignUp">Join Now</Link></Join>
-        <Signin><Link to="/SignIn">Sign in</Link></Signin>
+        <Signin><Link to="/Home">Sign in</Link></Signin>
         </Rigttbtn>
         </Nave>
 
