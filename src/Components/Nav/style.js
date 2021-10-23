@@ -123,7 +123,7 @@ background-color:white;
 
         @media (min-width:768px){
            
-    padding: 1px 24px;
+    padding: 1px 1.1rem;
     font-size:16px;
         } 
        
